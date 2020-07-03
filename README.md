@@ -1,24 +1,24 @@
-# esercizio-vue
+# Esercizio Vue
 
-## Project setup
+## Setup progetto
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Compilazione e hot-reload
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compilazione e minimizzazione per release
 ```
 yarn build
 ```
 
-### Lints and fixes files
+### Lint e sistemazione file
 ```
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Configurazione
+Vedi [documentazione](https://cli.vuejs.org/config/).
