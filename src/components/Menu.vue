@@ -1,26 +1,32 @@
 <template>
-  <el-menu :default-active="activeLink" mode="horizontal" :router="true">
+  <el-menu
+    :default-active="activeLink"
+    mode="horizontal"
+    :router="true"
+    background-color="#545c64"
+    text-color="#fff"
+    active-text-color="#ffd04b"
+  >
     <el-menu-item index="/">
       <i class="el-icon-menu"></i>
       <span>Home</span>
     </el-menu-item>
     <el-menu-item index="/istruzioni">
-      <i class="el-icon-cloudy"></i>
+      <i class="el-icon-info"></i>
       <span>Istruzioni</span>
     </el-menu-item>
   </el-menu>
 </template>
 
 <script>
-import _ from "lodash";
-
 export default {
   mounted: function() {
-    let match = _.chain(this.$route.matched)
-      .sortBy(n => n.path.length)
-      .last()
-      .value();
-    this.activeLink = match.path;
+    this.activeLink = this.$route.path;
+  },
+  watch: {
+    $route(newVal) {
+      this.activeLink = newVal.path;
+    }
   },
   data() {
     return {

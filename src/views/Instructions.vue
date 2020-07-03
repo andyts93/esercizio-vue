@@ -1,18 +1,37 @@
 <template>
   <div class="instructions">
-      <el-card>
-          <div slot="header">
-              <h3 class="m-0">Indicazioni generali</h3>
-          </div>
-          <ul>
-              <li>Dovranno essere utilizzati gli elementi messi a disposizione della libreria <a href="https://element.eleme.io/#/en-US/component/installation" target="_blank">Element</a></li>
-              <li>L'installazione della libreria è già stata effettuata</li>
-              <li>Siete liberi di installare componenti/librerie aggiuntive</li>
-              <li>Siete liberi di integrare quanto richiesto con delle migliorie</li>
-              <li>Generare una chiave lanciando dal terminale questo comando: <code>head -n 4096 /dev/urandom | openssl sha1 | cut -c1-8</code></li>
-              <li>Il lavoro dovrà essere svolto su un branch apposito partendo da master e chiamandolo <em><strong>esercizio/[chiave]</strong></em></li>
-          </ul>
-      </el-card>
+    <el-card>
+      <div slot="header">
+        <h3 class="m-0">Indicazioni generali</h3>
+      </div>
+      <ul>
+        <li>
+          Dovranno essere utilizzati gli elementi messi a disposizione della
+          libreria
+          <a
+            href="https://element.eleme.io/#/en-US/component/installation"
+            target="_blank"
+            >Element</a
+          >
+        </li>
+        <li>L'installazione della libreria è già stata effettuata</li>
+        <li>Siete liberi di installare componenti/librerie aggiuntive</li>
+        <li>Siete liberi di integrare quanto richiesto con delle migliorie</li>
+        <li>
+          Generare una chiave lanciando dal terminale questo comando:
+          <code>head -n 4096 /dev/urandom | openssl sha1 | cut -c1-8</code>
+        </li>
+        <li>
+          Il lavoro dovrà essere svolto su un branch apposito partendo da master
+          e chiamandolo <em><strong>esercizio/[chiave]</strong></em>
+        </li>
+        <li>
+          Anche se non esplicitamente richiesto potete utilizzare i componenti
+          di alert, notifiche, loading, icone e tutto quello che trovate
+          disponibile nella documentazione di Element
+        </li>
+      </ul>
+    </el-card>
     <el-card class="mt-2">
       <div slot="header">
         <h3 class="m-0">Tabella</h3>
@@ -27,7 +46,7 @@
             <li>Età</li>
             <li>Email</li>
             <li>Telefono</li>
-              <li>Data apertura conto</li>
+            <li>Data apertura conto</li>
             <li>Conto (formattato in valuta euro)</li>
           </ul>
         </li>
@@ -61,7 +80,7 @@
             <li>Età: campo numerico, l'utente dovrà avere almeno 18 anni</li>
             <li>Email: campo email</li>
             <li>Telefono: campo numerico</li>
-              <li>Data apertura conto: datepicker</li>
+            <li>Data apertura conto: datepicker</li>
             <li>
               Conto: campo numerico, l'utente dovrà avere un conto che va da un
               minimo di 100€ a un massimo di 2000€
@@ -74,16 +93,80 @@
         </li>
       </ol>
     </el-card>
-      <el-card class="mt-2">
-          <div slot="header">
-              <h3 class="m-0">Operazioni tabella</h3>
-          </div>
-          <ol>
-              <li>Aggiungere una colonna alla tabella per effettuare operazioni sulle righe</li>
-              <li>Inserire in questa colonna un bottone per eliminare e uno per modificare l'utente</li>
-              <li>Il bottone di eliminazione dovrà chiedere conferma prima di eliminare l'utente</li>
-              <li>Il bottone di modifica dovrà aprire il <em>dialog</em> creato in precedenza con i dati dell'utente pre-compilati e il salvataggio dovrà andare a modificare l'utente</li>
-          </ol>
-      </el-card>
+    <el-card class="mt-2">
+      <div slot="header">
+        <h3 class="m-0">Operazioni tabella</h3>
+      </div>
+      <ol>
+        <li>
+          Aggiungere una colonna alla tabella per effettuare operazioni sulle
+          righe
+        </li>
+        <li>
+          Inserire in questa colonna un bottone per eliminare e uno per
+          modificare l'utente
+        </li>
+        <li>
+          Il bottone di eliminazione dovrà chiedere conferma prima di eliminare
+          l'utente
+        </li>
+        <li>
+          Il bottone di modifica dovrà aprire il <em>dialog</em> creato in
+          precedenza con i dati dell'utente pre-compilati e il salvataggio dovrà
+          andare a modificare l'utente
+        </li>
+      </ol>
+    </el-card>
+    <el-card class="mt-2">
+      <div slot="header">
+        <h3 class="m-0">AJAX</h3>
+      </div>
+      <ol>
+        <li>
+          Sostituire gli utenti della tabella con quelli ritornati dal servizio
+          <code
+            >https://run.mocky.io/v3/4102dab4-4ea3-436d-8b27-60b84bb84aaa</code
+          >
+        </li>
+        <li>
+          Installare e utilizzare la libreria
+          <a href="https://www.npmjs.com/package/axios" target="_blank"
+            >Axios</a
+          >
+          per effettuare le chiamate all'endpoint (GET)
+        </li>
+      </ol>
+    </el-card>
+    <el-card class="mt-2 mb-2">
+      <div slot="header">
+        <h3 class="m-0">Link utili</h3>
+      </div>
+      <ul>
+        <li>
+          <a href="https://vuejs.org/v2/guide/" target="_blank"
+            >Documentazione Vue.js</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://element.eleme.io/#/en-US/component/installation"
+            target="_blank"
+            >Documentazione Element</a
+          >
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/axios" target="_blank"
+            >Axios</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://run.mocky.io/v3/4102dab4-4ea3-436d-8b27-60b84bb84aaa"
+            target="_blank"
+            >Endpoint utenti</a
+          >
+        </li>
+      </ul>
+    </el-card>
   </div>
 </template>
